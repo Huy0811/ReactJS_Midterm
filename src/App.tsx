@@ -6,7 +6,7 @@ import MyComponent from "./components";
 const data = {
   header: "YÊU CẦU 2 VÀ 3",
   headerStyle: { color: "cyan" },
-  content: [
+  contents: [
     { name: "Nguyễn Thị Phương Anh", style: { color: "red" } },
     { name: "Nguyễn Việt Ân", style: { color: "blue" } },
     { name: "Vương Quang Hiển", style: { color: "green" } },
@@ -23,14 +23,14 @@ const data = {
 };
 
 function App() {
-  const { header, headerStyle, content } = data;
+  const { header, headerStyle, contents } = data;
 
   return (
     <div className="App">
       <MyComponent
         header={header}
         headerStyle={headerStyle}
-        content={content}
+        contents={contents}
       />
     </div>
   );
